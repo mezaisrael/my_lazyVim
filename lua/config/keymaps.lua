@@ -11,4 +11,7 @@ vim.keymap.set("n", "<leader>;", ":", { desc = "enter command mode" })
 vim.keymap.set("n", "<leader>hi", ":nohl", { desc = "clear search highlight" })
 
 -- exit terminal
--- map("t", "<C-k>", "<cmd>close<cr>", { desc = "Hide Terminal" })
+vim.keymap.set("t", "kj", [[<C-\><C-n>]])
+
+--save file
+vim.keymap.set("n", ",w", ":w<CR>", { desc = "save file" })
